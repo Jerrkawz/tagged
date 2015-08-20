@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div ng-app="tagged">
+		<div class="view-container">
+		    <div ng-view class="view-frame animate-view"></div>
+		  </div>
+		</div>
+	</div>
 </body>
 </html>

@@ -54,5 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  root 'application#index'
   resources :users
+  resources :posts
+  resources :tags, :param => :name, :path => "t"
 end
