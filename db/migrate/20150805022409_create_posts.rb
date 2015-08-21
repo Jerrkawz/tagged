@@ -5,8 +5,8 @@ class CreatePosts < ActiveRecord::Migration
       t.string :link
       t.text :content
       t.references :user, index: true
-      t.integer :upvotes
-      t.integer :downvotes
+      t.integer :upvotes, default: 0
+      t.integer :downvotes, default: 0
 
       t.timestamps
     end

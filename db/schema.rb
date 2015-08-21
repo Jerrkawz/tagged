@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20150818172926) do
     t.string   "link"
     t.text     "content"
     t.integer  "user_id"
-    t.integer  "upvotes"
-    t.integer  "downvotes"
+    t.integer  "upvotes",    default: 0
+    t.integer  "downvotes",  default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
